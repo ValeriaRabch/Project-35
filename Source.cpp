@@ -16,65 +16,65 @@ public:
 		this->mount_angles = mount_angles;
 	}
 };
-
-class Circle :public Shape {
-	int radius, diameter;
-	int midpoint[2];
-
-public:
-	Circle(){
-		Shape();
-		radius = 0;
-		diameter = 0;
-		midpoint[0] = 0;
-		midpoint[1] = 0;
-	}
-	Circle(char name[], int mount_angles, int radius, int midpoint[2]) : Shape(name, mount_angles), radius(radius), diameter(radius * 2) {
-		this->midpoint[0] = midpoint[0];
-		this->midpoint[1] = midpoint[1];
-	}
-	int FindP() {
-		return 2 * radius;
-	}
-	int FindS() {
-		return radius * radius;
-	}
-};
-
-class Triangle :public Shape {
-	int length_a, length_b, length_c;
-	int angle_a, angle_b, angle_c;
-	int length_h_a;
-public:
-	Triangle() : length_a(0), length_b(0), length_c(0), angle_a(0), angle_b(0), angle_c(0), length_h_a(0){}
-	Triangle(char name[], int mount_angles, int a, int b, int c, int a_a, int a_b, int a_c, int h_a) : Shape(name, mount_angles), length_a(a), length_b(b), length_c(c), angle_a(a_a), angle_b(a_b), angle_c(a_c), length_h_a(h_a){}
-
-	int FindP() {
-		return length_a + length_b + length_c;
-	}
-	int FindS() {
-		return (length_a * length_h_a)/2;
-	}
-};
-
-class Rectangle :public Shape {
-	int length_a, length_b;
-public:
-	Rectangle() : length_a(0), length_b(0) {}
-	Rectangle(char name[], int mount_angles, int a, int b) : Shape(name, mount_angles), length_a(a), length_b(b) {}
-
-	int FindP() {
-		return (length_a + length_b) * 2;
-	}
-	int FindS() {
-		return length_a * length_b;
-	}
-};
+//
+//class Circle :public Shape {
+//	int radius, diameter;
+//	int midpoint[2];
+//
+//public:
+//	Circle(){
+//		Shape();
+//		radius = 0;
+//		diameter = 0;
+//		midpoint[0] = 0;
+//		midpoint[1] = 0;
+//	}
+//	Circle(char name[], int mount_angles, int radius, int midpoint[2]) : Shape(name, mount_angles), radius(radius), diameter(radius * 2) {
+//		this->midpoint[0] = midpoint[0];
+//		this->midpoint[1] = midpoint[1];
+//	}
+//	int FindP() {
+//		return 2 * radius;
+//	}
+//	int FindS() {
+//		return radius * radius;
+//	}
+//};
+//
+//class Triangle :public Shape {
+//	int length_a, length_b, length_c;
+//	int angle_a, angle_b, angle_c;
+//	int length_h_a;
+//public:
+//	Triangle() : length_a(0), length_b(0), length_c(0), angle_a(0), angle_b(0), angle_c(0), length_h_a(0){}
+//	Triangle(char name[], int mount_angles, int a, int b, int c, int a_a, int a_b, int a_c, int h_a) : Shape(name, mount_angles), length_a(a), length_b(b), length_c(c), angle_a(a_a), angle_b(a_b), angle_c(a_c), length_h_a(h_a){}
+//
+//	int FindP() {
+//		return length_a + length_b + length_c;
+//	}
+//	int FindS() {
+//		return (length_a * length_h_a)/2;
+//	}
+//};
+//
+//class Rectangle :public Shape {
+//	int length_a, length_b;
+//public:
+//	Rectangle() : length_a(0), length_b(0) {}
+//	Rectangle(char name[], int mount_angles, int a, int b) : Shape(name, mount_angles), length_a(a), length_b(b) {}
+//
+//	int FindP() {
+//		return (length_a + length_b) * 2;
+//	}
+//	int FindS() {
+//		return length_a * length_b;
+//	}
+//};
 
 
 int main() {
 
-	char name[20]; int mount_angles; 
+	/*char name[20]; int mount_angles; 
 	
 	int radius, diameter, midpoint[2];
 
@@ -125,7 +125,7 @@ int main() {
 	}
 	else {
 		cout << "Error ";
-	}
+	}*/
 
 	
 
