@@ -57,19 +57,19 @@ public:
 	}
 };
 
-//class Rectangle :public Shape {
-//	int length_a, length_b;
-//public:
-//	Rectangle() : length_a(0), length_b(0) {}
-//	Rectangle(char name[], int mount_angles, int a, int b) : Shape(name, mount_angles), length_a(a), length_b(b) {}
-//
-//	int FindP() {
-//		return (length_a + length_b) * 2;
-//	}
-//	int FindS() {
-//		return length_a * length_b;
-//	}
-//};
+class Rectangle :public Shape {
+	int length_a, length_b;
+public:
+	Rectangle() : length_a(0), length_b(0) {}
+	Rectangle(char name[], int mount_angles, int a, int b) : Shape(name, mount_angles), length_a(a), length_b(b) {}
+
+	int FindP() {
+		return (length_a + length_b) * 2;
+	}
+	int FindS() {
+		return length_a * length_b;
+	}
+};
 
 
 int main() {
