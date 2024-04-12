@@ -74,18 +74,20 @@ public:
 
 int main() {
 
-	/*char name[20]; int mount_angles; 
+	char name[20]; int mount_angles; 
 	
 	int radius, diameter, midpoint[2];
 
+	
 	int length_a, length_b, length_c;
 	int angle_a, angle_b, angle_c;
 	int length_h_a;
 
+	
 	cout << "Enter name shape "; cin >> name;
 	cout << "Enter mount_angles "; cin >> mount_angles;
 
-	if (mount_angles == 0) {
+	/*if (mount_angles == 0) {
 		cout << "Enter radius "; cin >> radius;
 		cout << "Enter midpoint x "; cin >> midpoint[0];
 		cout << "Enter midpoint y "; cin >> midpoint[1];
