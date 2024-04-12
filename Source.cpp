@@ -40,23 +40,23 @@ public:
 		return radius * radius;
 	}
 };
-//
-//class Triangle :public Shape {
-//	int length_a, length_b, length_c;
-//	int angle_a, angle_b, angle_c;
-//	int length_h_a;
-//public:
-//	Triangle() : length_a(0), length_b(0), length_c(0), angle_a(0), angle_b(0), angle_c(0), length_h_a(0){}
-//	Triangle(char name[], int mount_angles, int a, int b, int c, int a_a, int a_b, int a_c, int h_a) : Shape(name, mount_angles), length_a(a), length_b(b), length_c(c), angle_a(a_a), angle_b(a_b), angle_c(a_c), length_h_a(h_a){}
-//
-//	int FindP() {
-//		return length_a + length_b + length_c;
-//	}
-//	int FindS() {
-//		return (length_a * length_h_a)/2;
-//	}
-//};
-//
+
+class Triangle :public Shape {
+	int length_a, length_b, length_c;
+	int angle_a, angle_b, angle_c;
+	int length_h_a;
+public:
+	Triangle() : length_a(0), length_b(0), length_c(0), angle_a(0), angle_b(0), angle_c(0), length_h_a(0){}
+	Triangle(char name[], int mount_angles, int a, int b, int c, int a_a, int a_b, int a_c, int h_a) : Shape(name, mount_angles), length_a(a), length_b(b), length_c(c), angle_a(a_a), angle_b(a_b), angle_c(a_c), length_h_a(h_a){}
+
+	int FindP() {
+		return length_a + length_b + length_c;
+	}
+	int FindS() {
+		return (length_a * length_h_a)/2;
+	}
+};
+
 //class Rectangle :public Shape {
 //	int length_a, length_b;
 //public:
@@ -97,7 +97,7 @@ int main() {
 		cout << "Perimeter " << circle.FindP()<< "pi" << endl;
 		cout << "Area " << circle.FindS() << "pi" << endl;
 	}
-	/*if (mount_angles == 3) {
+	if (mount_angles == 3) {
 		cout << "Enter length a "; cin >> length_a;
 		cout << "Enter length b "; cin >> length_b;
 		cout << "Enter length c "; cin >> length_c;
@@ -116,7 +116,7 @@ int main() {
 			cout << "Error ";
 		}
 	}
-	if (mount_angles == 4) {
+	/*if (mount_angles == 4) {
 		cout << "Enter length a "; cin >> length_a;
 		cout << "Enter length b "; cin >> length_b;
 
