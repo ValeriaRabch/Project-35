@@ -16,30 +16,30 @@ public:
 		this->mount_angles = mount_angles;
 	}
 };
-//
-//class Circle :public Shape {
-//	int radius, diameter;
-//	int midpoint[2];
-//
-//public:
-//	Circle(){
-//		Shape();
-//		radius = 0;
-//		diameter = 0;
-//		midpoint[0] = 0;
-//		midpoint[1] = 0;
-//	}
-//	Circle(char name[], int mount_angles, int radius, int midpoint[2]) : Shape(name, mount_angles), radius(radius), diameter(radius * 2) {
-//		this->midpoint[0] = midpoint[0];
-//		this->midpoint[1] = midpoint[1];
-//	}
-//	int FindP() {
-//		return 2 * radius;
-//	}
-//	int FindS() {
-//		return radius * radius;
-//	}
-//};
+
+class Circle :public Shape {
+	int radius, diameter;
+	int midpoint[2];
+
+public:
+	Circle(){
+		Shape();
+		radius = 0;
+		diameter = 0;
+		midpoint[0] = 0;
+		midpoint[1] = 0;
+	}
+	Circle(char name[], int mount_angles, int radius, int midpoint[2]) : Shape(name, mount_angles), radius(radius), diameter(radius * 2) {
+		this->midpoint[0] = midpoint[0];
+		this->midpoint[1] = midpoint[1];
+	}
+	int FindP() {
+		return 2 * radius;
+	}
+	int FindS() {
+		return radius * radius;
+	}
+};
 //
 //class Triangle :public Shape {
 //	int length_a, length_b, length_c;
