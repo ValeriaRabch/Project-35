@@ -87,7 +87,7 @@ int main() {
 	cout << "Enter name shape "; cin >> name;
 	cout << "Enter mount_angles "; cin >> mount_angles;
 
-	/*if (mount_angles == 0) {
+	if (mount_angles == 0) {
 		cout << "Enter radius "; cin >> radius;
 		cout << "Enter midpoint x "; cin >> midpoint[0];
 		cout << "Enter midpoint y "; cin >> midpoint[1];
@@ -97,7 +97,7 @@ int main() {
 		cout << "Perimeter " << circle.FindP()<< "pi" << endl;
 		cout << "Area " << circle.FindS() << "pi" << endl;
 	}
-	if (mount_angles == 3) {
+	/*if (mount_angles == 3) {
 		cout << "Enter length a "; cin >> length_a;
 		cout << "Enter length b "; cin >> length_b;
 		cout << "Enter length c "; cin >> length_c;
