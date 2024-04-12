@@ -116,7 +116,7 @@ int main() {
 			cout << "Error ";
 		}
 	}
-	/*if (mount_angles == 4) {
+	if (mount_angles == 4) {
 		cout << "Enter length a "; cin >> length_a;
 		cout << "Enter length b "; cin >> length_b;
 
@@ -127,7 +127,7 @@ int main() {
 	}
 	else {
 		cout << "Error ";
-	}*/
+	}
 
 	
 
